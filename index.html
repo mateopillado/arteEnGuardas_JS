@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="productos.js" defer></script>
+    <script src="main.js"></script>
+    
+    <title>Arte En Guardas - Inicio</title>
+
+</head>
+<body onload="init()" class="contenedor">
+
+    <!-- NAV -->
+    <nav class="navegacion">
+        <div class="logo">
+            <h3>Arte En Guardas</h3>
+        </div>
+        <div class="links">
+            <a href="#" class="link">Inicio</a>
+            <a href="#" class="link">---</a>
+            <a href="#" class="link">---</a>
+            <a href="#" class="link">---</a>
+            <a href="#footer" class="link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- dark mode -->
+    <label class="switch">
+        <input type="checkbox" id="botonMode">
+        <span class="slider"></span>
+    </label>
+
+    <!-- calculador de mts -->
+    <div class="calculadoraMt2">
+        <div class="img_mt2"><img src="img_prod/pool-calculator-rectangle-800x450.jpg" alt=""></div>
+        <div class="fondoMt2">
+            <input type="number" id="ancho" placeholder="ancho">
+            <input type="number" id="largo" placeholder="largo">
+            <input type="number" id="alto" placeholder="alto">
+            <input type="number" id="alto_2" placeholder="alto 2 - opcional">
+            <button id="calcularBtn"> calcular </button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+    
+    <!-- Buscador -->
+    <div class="buscadorCSS">
+        <input type="" id="buscador" placeholder="Color o Cantidad">
+        <button id="buscadorButton"> Buscar </button>
+    </div>
+
+    <!-- Donde se genera el DOM -->
+    <div id="mostrarPadre"></div>
+
+    <footer class="footer">
+        <p class="footerText">Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
